@@ -5,19 +5,19 @@ title: Home
 
 <div class="container-home-1">
   <h1>Hi, I am Ye Wang (Eric)</h1>
-  <p>I am  a first-year PhD student in the  <a href="https://stat.duke.edu/">Department of Statistical Science</a> at <a href="http://duke.edu/">Duke University</a>. My research, conducted under the supervision of <a href="https://stat.duke.edu/~dunson/">David Dunson</a>, 
-focuses on dimension reduction, scalable Bayesian inference and nonparametric model.</p>
+  <p>I am a PhD student in the <a href="https://stat.duke.edu/">Department of Statistical Science</a> at <a href="http://duke.edu/">Duke University</a>. My research, conducted under the supervision of <a href="https://stat.duke.edu/~dunson/">David Dunson</a>, 
+focuses on scalable Bayesian inference and nonparametric model.</p>
   </div>
 
 <div class="container-home-1">
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
-    <h3 class="post-title">
+    <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h3>
+    </h1>
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
   </article>
