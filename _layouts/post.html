@@ -11,17 +11,9 @@ layout: default
 
 <table cellspacing="0" cellpadding="0">
   <tr>
-    <td valign="middle">{% include googleplusshare.html %}</td>
-  </tr>
-  
-  <tr>
-    <td valign="middle"><div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></td>
-  </tr>
-  
-    <tr>
-      <td valign="middle"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></td>
-  </tr>
-</table>
+    {% include googleplusshare.html %}
+    <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 
 {% include comments.html %}
 </div>
