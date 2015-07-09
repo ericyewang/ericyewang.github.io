@@ -18,12 +18,11 @@ title: Home
 <!-- Most Recent Blog -->
 <div class="jumbotron2">
 <div class="container-home-small">
-  <h1>Blog</h1>
 <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
     <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      Blog: <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h2>
