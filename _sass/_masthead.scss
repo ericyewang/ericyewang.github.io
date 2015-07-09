@@ -19,7 +19,7 @@
     color: transparent;
     display: block;
     text-transform: uppercase;
-    text-shadow: 0rem 0rem 1rem #fff;
+    text-shadow: 0rem 0rem 0.1rem #fff;
     letter-spacing: 1rem;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -29,7 +29,7 @@
   }
   a:hover{
 	color: #fff;
-	text-shadow: 0rem 0rem 1rem #fff;
+	text-shadow: 0rem 0rem 0.1rem #fff;
 	padding-left: 1rem;
 }
   
@@ -43,6 +43,6 @@
 
 .masthead-title:hover {
   a {
-  	text-shadow: 0px 0px 1px #0d1a3a;
+  	text-shadow: 0px 0px 0.1px #0d1a3a;
   }
 }
