@@ -4,15 +4,17 @@
 
 .masthead {
 	position: fixed;
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+	z-index: 9999;
+	padding-top:    1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 3rem;
 }
 
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  opacity: 0.9;
   font-size: 2rem;
   display: block;
   a {
@@ -38,13 +40,6 @@
 	text-shadow: 0rem 0rem 0.1rem #fff;
 	padding-left: 1rem;
 }
-  
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
-  }
 }
 
 .masthead-title:hover {
