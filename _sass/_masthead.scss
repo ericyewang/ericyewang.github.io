@@ -21,12 +21,6 @@
   color: #505050;
   font-size: 1rem;
   a {
-  	color: #fff;
-  }
-  span {
-  	float: right;
-  }
-  span a {
     color: transparent;
     text-transform: uppercase;
     text-shadow: 0rem 0rem 0.1rem #fff;
@@ -37,7 +31,7 @@
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  span a:hover{
+  a:hover{
 	color: #fff;
 	text-shadow: 0rem 0rem 0.1rem #fff;
 	padding-left: 1rem;
@@ -45,7 +39,7 @@
 }
 
 .masthead-title:hover {
-  span a {
+	a {
   	text-shadow: 0px 0px 0.1px #0d1a3a;
   }
 }
