@@ -63,14 +63,21 @@ footer {
   text-align: center;
 }
 
+.social li{
+    display:inline;
+}  
+
 .g-plus {
-  display: block;
+    position:relative;
+    top:-7px;
 }
 
 .fb-like {
-  display: block;
+    position:relative;
+    top:-7px;
 }
 
 .twitter-share-button {
-  display: block;
+    position:relative;
+    top:-7px;
 }
