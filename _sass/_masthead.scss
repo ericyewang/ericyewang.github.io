@@ -2,7 +2,7 @@
 // Blurr effect
 // Super small header above the content for site name and short description.
 
-head {
+header {
 	position: fixed;
 	left:0;
 	right:0;
@@ -20,7 +20,7 @@ head {
 	transition: all 0.3s ease-in-out;
 }
 
-head:hover {
+header:hover {
 	opacity: 0.7;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
