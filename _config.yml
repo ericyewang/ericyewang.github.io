@@ -1,26 +1,30 @@
 # Permalinks
-permalink:        pretty
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:            Subramanyam Molleti
-tagline:          ''
-description:	  'Personal Blog of <a href="http://subramanyammolleti.github.io/about/">Subramanyam Molleti</a> who is a Software Engineer by Profession he loves Linux, Java, Javascript and Algorithms. Apart from these he likes Food and Travelling. Catch him at <a href="https://twitter.com/_MSubramanyam" target="_blank">@_MSubramanyam</a>.'
-url:              http://subramanyammolleti.github.io
-baseurl:          ''
-paginate:         5
+title:               Poole
+tagline:             The Jekyll Butler
+url:                 http://getpoole.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
 # About/contact
 author:
-  name:           Subramanyam Molleti
-  url:            https://twitter.com/_MSubramanyam
-  email:          subbumolleti002@gmail.com
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
 # Custom vars
-version:          1.0.0
-
-# This is the list of pages to include in the header of the website.
-pages_list:       
-  About: '/about/'
-  Archive: '/archive/'
-  Feed: '/atom.xml'
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole

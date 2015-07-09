@@ -3,17 +3,28 @@ layout: page
 title: About
 ---
 
-![It's me at Shilparamam, Hyderabad](/assets/subramanyammolleti.jpg)
-
 <p class="message">
-  Hey there! This is Subramanyam Molleti who loves Computer Science and 
-  Open Source, I always Hogs on my Ubuntu Machine learning something.
+  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>
 
-I have Done Bachelor of Technology in Computer Science at [JNTUK](http://www.jntuk.edu.in/). Currently i'm working as a Software Engineer in [Smart IMS Inc.](http://www.smartims.com/) at it's *Hyderabad Development Center.* 
+In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
-I'm interested in *Open Source, Mobile and Algorithms.*
+There are currently two themes built on Poole:
 
-I will start learning *Algorithms* soon. If you would like to say hello or something [Ping Me](https://twitter.com/_MSubramanyam), I would love to get back to you.
+* [Hyde](http://hyde.getpoole.com)
+* [Lanyon](http://lanyon.getpoole.com)
+
+Learn more and contribute on [GitHub](https://github.com/poole).
+
+## Setup
+
+Some fun facts about the setup of this project include:
+
+* Built for [Jekyll](http://jekyllrb.com)
+* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
+* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
+* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
 Thanks for reading!
