@@ -3,6 +3,7 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
+	position: fixed;
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
@@ -14,8 +15,13 @@
   color: #505050;
   font-size: 2rem;
   display: block;
-
   a {
+  	color: #fff;
+  }
+  span {
+  	float: right;
+  }
+  span a {
     color: transparent;
     display: block;
     text-transform: uppercase;
@@ -27,7 +33,7 @@
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  a:hover{
+  span a:hover{
 	color: #fff;
 	text-shadow: 0rem 0rem 0.1rem #fff;
 	padding-left: 1rem;
@@ -42,7 +48,7 @@
 }
 
 .masthead-title:hover {
-  a {
+  span a {
   	text-shadow: 0px 0px 0.1px #0d1a3a;
   }
 }
