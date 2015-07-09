@@ -1,5 +1,5 @@
 // Masthead
-//
+// Blurr effect
 // Super small header above the content for site name and short description.
 
 .masthead {
@@ -14,9 +14,23 @@
   color: #505050;
 
   a {
-    color: #505050;
+    color: transparent;
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 0rem 0rem 5rem #fff;
+    letter-spacing: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-
+  a:hover{
+	color: #fff;
+	text-shadow: 0rem 0rem 1rem #fff;
+	padding-left: 10rem;
+}
+  
   small {
     font-size: 75%;
     font-weight: 400;
