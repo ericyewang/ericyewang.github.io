@@ -12,6 +12,8 @@
   margin-top: 0;
   margin-bottom: 0;
   color: #505050;
+  font-size: 50rem;
+  display: block;
 
   a {
     color: transparent;
@@ -36,5 +38,11 @@
     font-weight: 400;
     color: #c0c0c0;
     letter-spacing: 0;
+  }
+}
+
+.masthead-title:hover {
+  a {
+  	text-shadow: 0px 0px 5px #0d1a3a;
   }
 }
