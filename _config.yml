@@ -5,11 +5,11 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Ye Wang (Eric)
+tagline:             Applied Statistician
+url:                 http://ericyewang.github.io
 paginate:            1
-baseurl:             ""
+baseurl:             http://ericyewang.github.io
 
 # Assets
 #
@@ -20,11 +20,16 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
+  name:              Ye Wang
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
 # Custom vars
-version:             2.0.0
+version:             1.0.0
 github:
   repo:              https://github.com/poole/poole
+
+# This is the list of pages to include in the header of the website.
+pages_list:       
+  About: '/about/'
+  Archive: '/archive/'
