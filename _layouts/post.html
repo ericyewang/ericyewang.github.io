@@ -9,11 +9,19 @@ layout: default
   {{ content }}
 </article>
 
-  <p>{% include googleplusshare.html %}</p>
+<table style="width:20%">
+  <tr>
+    {% include googleplusshare.html %}
+  </tr>
   
-  <p><div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div><p>
-      
-  <p><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><p>
+  <tr>
+    <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+  </tr>
+  
+    <tr>
+      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+  </tr>
+</table>
 
 {% include comments.html %}
 </div>
