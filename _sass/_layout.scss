@@ -7,18 +7,20 @@ main {
   top: 10rem;
 }
 
-.container1 {
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
-  margin-left:  5rem;
-  margin-right: 5rem;
+.jumbotron {
+  background-color: #fff;
 }
 
-.container2 {
+.container {
   padding-left:  1.5rem;
   padding-right: 1.5rem;
   margin-left:  5rem;
   margin-right: 5rem;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: solid;
+  border-color: #fff;
 }
 
 footer {
