@@ -103,6 +103,7 @@ a[href^="#fnref:"] {
 
 // List of footnotes
 .footnotes {
+  position: relative;
   margin-top: 2rem;
   font-size: 85%;
 }
