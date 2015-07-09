@@ -2,6 +2,10 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
+main {
+  position: relative;
+}
+
 .container {
   max-width: 38rem;
   padding-left:  1.5rem;
