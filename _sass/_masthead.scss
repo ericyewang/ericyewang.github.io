@@ -32,31 +32,6 @@ header:hover {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
-  a {
-    color: #505050;
-    text-transform: uppercase;
-    text-shadow: 0rem 0rem 0.1rem #505050;
-    letter-spacing: 1rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  a:hover{
-	color: #fff;
-	text-shadow: 0rem 0rem 0.1rem #fff;
-	padding-left: 1rem;
-	-webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-}
-}
-
-.masthead-title:hover {
-	a {
-  	text-shadow: 0px 0px 0.1rem #cccccc;
-  }
+  color: #fff;
+  text-shadow: 0rem 0rem 0.1rem #fff;
 }
