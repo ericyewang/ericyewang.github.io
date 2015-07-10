@@ -8,7 +8,7 @@ header {
 	left:0;
 	right:0;
 	z-index: 9999;
-	background-color: #000;
+	background-color: #001A57;
 	opacity: 0.5;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -32,5 +32,7 @@ header:hover {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #ffffff;
+  a {
+  	color: #fff;
+  }
 }
