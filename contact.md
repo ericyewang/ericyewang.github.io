@@ -8,6 +8,8 @@ title: Contact
 <p>222 Old Chem Bldg, Duke University, Durham, NC 27708-0251.</p>
 <p>yw104 (at) stat (dot) duke (dot) edu<p>
 </div>
+</div>
+<div class="jumbotron1">
 <div class="container-home">
   <h3>Or find me on</h3>
     <div class="soci-logo">
