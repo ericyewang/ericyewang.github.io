@@ -5,9 +5,6 @@ title: Contact
 
 <div class="jumbotron1">
 <div class="container-home">
-<p>222 Old Chem Bldg</p>
-<p>Duke University</p>
-<p>Durham, NC, 27708-0251</p>
 <p>yw104 (at) stat (dot) duke (dot) edu<p>
 </div>
 </div>
