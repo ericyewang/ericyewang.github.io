@@ -7,6 +7,8 @@ title: Contact
 <div class="container-home">
 <p>222 Old Chem Bldg, Duke University, Durham, NC 27708-0251.</p>
 <p>yw104 (at) stat (dot) duke (dot) edu<p>
+</div>
+<div class="container-home">
   <h3>Or find me on</h3>
     <div class="soci-logo">
       <a href="https://www.linkedin.com/in/ericyewang"><img id="link" src="/asset/linkedin_128_128.png" alt="linkedin"></a></div>
