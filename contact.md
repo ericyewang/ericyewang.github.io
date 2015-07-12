@@ -6,9 +6,9 @@ title: Contact
 <div class="jumbotron1">
 <div class="container-home">
 <h3>Either find me via</h3>
-    <div class="soci-logo">
-    <img src="/asset/email_128_128.png" alt="google plus"></div>
-<p>yw104 (at) stat (dot) duke (dot) edu<p>
+<p>    <div class="soci-logo">
+    <img src="/asset/email_128_128.png" alt="google plus"></div> 
+    yw104 (at) stat (dot) duke (dot) edu<p>
 </div>
 </div>
 <div class="jumbotron1">
