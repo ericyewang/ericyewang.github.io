@@ -35,8 +35,10 @@
 }
 
 #self {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left:  30%;
+  padding-right: 30%;
   background-image: url("asset/Background.JPG");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,14 +46,14 @@
   background-size: cover;
 }
 
-#container-home-self .container-home {
+#self .container-home-small {
   background-color: #fff;
   opacity: 0.6;
   text-align: center;
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
-  margin-left:  15%;
-  margin-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left:  5%;
+  padding-right: 5%;
 }
 
 .container-home {
