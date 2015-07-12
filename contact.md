@@ -1,14 +1,17 @@
 ---
-layout: page
+layout: default
 title: Contact
 ---
 
 <div class="jumbotron1">
 <div class="container-home">
 <h3>Either find me via</h3>
-<p>    <div class="soci-logo">
-    <img src="/asset/email_128_128.png" alt="google plus"></div> 
-    yw104 (at) stat (dot) duke (dot) edu<p>
+<table style="width:60%">
+  <tr>
+    <td><img src="/asset/email_128_128.png" alt="email"></td>
+    <td>yw104 (at) stat (dot) duke (dot) edu</td> 
+  </tr>
+  </table>
 </div>
 </div>
 <div class="jumbotron1">
