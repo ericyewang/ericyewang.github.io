@@ -5,12 +5,15 @@ title: Contact
 
 <div class="jumbotron1">
 <div class="container-home">
+<h3>Either find me via</h3>
+    <div class="soci-logo">
+    <img src="/asset/email_128_128.png" alt="google plus"></div>
 <p>yw104 (at) stat (dot) duke (dot) edu<p>
 </div>
 </div>
 <div class="jumbotron1">
 <div class="container-home">
-  <h3>Or find me on</h3>
+  <h3>Or on</h3>
     <div class="soci-logo">
       <a href="https://www.linkedin.com/in/ericyewang"><img id="link" src="/asset/linkedin_128_128.png" alt="linkedin"></a></div>
     <div class="soci-logo">
