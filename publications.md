@@ -5,6 +5,7 @@ title: Publications
 
 <div id="pub-container">
 
+<!-- electroGP -->
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Probabilistic curve learning: Coulomb repulsion and the electrostatic Gaussian process. 
 <i>arxiv</i>.</p>
@@ -16,6 +17,7 @@ title: Publications
 </div>
 </div>
 
+<!-- GEODE -->
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2014) Scalable multiscale density estimation. 
 <i>arxiv</i>.</p>
