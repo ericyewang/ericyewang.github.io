@@ -18,4 +18,17 @@
   border-left-style: none;
   border-color: #CCCCCC;
   border-width: 0.2rem;
+  
+  #pub-sub {
+    height: 0;
+    overflow: 0;
+    opacity: 0;
+  }
+}
+
+#pub-main {
+  #pub-sub {
+    height: auto;
+    opacity: 1;
+  }
 }
