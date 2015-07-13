@@ -1,3 +1,24 @@
 // Publications
 //
 // Styles for presenting publications.
+
+#pub-container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+#pub-main {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  #pub-sub {
+    display: none;
+  }
+}
+
+#pub-main:hover {
+  #pub-sub {
+    display: block;
+  }
+}
