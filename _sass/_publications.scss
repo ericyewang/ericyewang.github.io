@@ -38,6 +38,12 @@
 
 #pub-main:hover {
   background-color: #E8E8EE;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-color: #CCCCCC;
+  border-width: 0.1rem;
   #pub-sub {
     height: auto;
     opacity: 1;
@@ -52,14 +58,4 @@
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-#pub-sub:hover {
-    height: auto;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
