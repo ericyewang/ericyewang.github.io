@@ -5,7 +5,7 @@ title: Contact
 
 <div class="jumbotron1">
 <div class="container-home">
-<h3>Either find me via</h3>
+<h3 style="margin-top: 10%;">Either find me via</h3>
 <p>yw104 (at) stat (dot) duke (dot) edu</p>
 </div>
 </div>
