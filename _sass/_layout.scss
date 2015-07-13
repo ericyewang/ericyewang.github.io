@@ -8,12 +8,6 @@
   margin-left:  15%;
   margin-top:  15%;
   margin-right: 15%;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: solid;
-  border-left-style: none;
-  border-color: #CCCCCC;
-  border-width: 0.5rem;
 }
 
 .jumbotron1 {
@@ -36,11 +30,13 @@
 
 footer {
   position: relative;
-  top: 5rem;
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
-  margin-left:  15%;
-  margin-right: 15%;
-  margin-bottom: 2rem;
+  padding-top:  5%;
+  padding-bottom: 5%;
   text-align: center;
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-color: #CCCCCC;
+  border-width: 0.5rem;
 }
