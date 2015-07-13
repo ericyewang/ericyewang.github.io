@@ -14,8 +14,9 @@
   padding-bottom: 2%;
   #pub-sub {
     background-color: #E8E8EE;
-    visibility: hidden;
     opacity: 0;
+    height: 0;
+    overflow: hidden;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -26,8 +27,8 @@
 
 #pub-main:hover {
   #pub-sub {
-    visibility: visible;
     opacity: 1;
+    height: auto
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
