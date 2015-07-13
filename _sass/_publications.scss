@@ -12,9 +12,9 @@
 .pub-main {
   padding-top: 2%;
   padding-bottom: 2%;
-  border-top-style: none;
+  border-top-style: solid;
   border-right-style: none;
-  border-bottom-style: solid;
+  border-bottom-style: none;
   border-left-style: none;
   border-color: #CCCCCC;
   border-width: 0.2rem;
@@ -41,9 +41,9 @@
   .pub-sub {
     height: auto;
     opacity: 1;
-    border-top-style: none;
+    border-top-style: solid;
     border-right-style: none;
-    border-bottom-style: solid;
+    border-bottom-style: none;
     border-left-style: none;
     border-color: #CCCCCC;
     border-width: 0.1rem;
