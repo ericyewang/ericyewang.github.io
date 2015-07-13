@@ -14,7 +14,7 @@ title: Publications
 </div>
 
 <div id="pub-main">
-<p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Scalable multiscale density estimation. 
+<p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2014) Scalable multiscale density estimation. 
 <i>arxiv</i>. &nbsp;&nbsp;&nbsp;[<a href="http://arxiv.org/pdf/1410.7692v1.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 <div id="pub-sub">
 <p><b>Abstract</b></p>
