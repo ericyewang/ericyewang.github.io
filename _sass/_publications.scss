@@ -12,27 +12,5 @@
 #pub-main {
   padding-top: 2%;
   padding-bottom: 2%;
-  #pub-sub {
-    background-color: #E8E8EE;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-#pub-main:hover {
-  #pub-sub {
-    opacity: 1;
-    height: auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
+  
 }
