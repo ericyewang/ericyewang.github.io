@@ -5,7 +5,9 @@ title: Interesting intuitions of the score and the Fisher information
 
 In this post I'm going to present two interesting intuitions about the **score function** and the **Fisher information**. Prior to that let's have a quick review of these two concepts:
 
-> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of \\(\boldsymbol{X}\\) is \\(L(\theta;\boldsymbol{X})\\), then the score function \\(S(\theta;\boldsymbol{X})\\) is defined as \\(S(\theta; \boldsymbol{X})=\frac{\partial}{\partial\theta} \log L(\theta; \boldsymbol{X})\\)
+> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of the observation \\(\boldsymbol{X}\\) is \\(L(\theta;\boldsymbol{X})\\), then the score function \\(S(\theta;\boldsymbol{X})\\) is defined as \\(S(\theta; \boldsymbol{X})=\frac{\partial}{\partial\theta} \log L(\theta; \boldsymbol{X})\\).
+
+> **Fisher information**: the variance of the score function. To be specific, let's assume again that the score function of the observation \\(\boldsymbol{X}\\) is \\(S(\theta;\boldsymbol{X})\\), then the fisher information is defined as \\(E\bigg(S(\theta;\boldsymbol{X})^2\bigg|\theta\bigg)\\).
 
 -----
 
