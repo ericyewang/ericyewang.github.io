@@ -7,7 +7,7 @@ In this post I'm going to present two interesting intuitions about the **score f
 
 > **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of the observation \\(\boldsymbol{X}\\) is \\(L(\theta;\boldsymbol{X})\\), then the score function \\(S(\theta;\boldsymbol{X})\\) is defined as \\(S(\theta; \boldsymbol{X})=\frac{\partial}{\partial\theta} \log L(\theta; \boldsymbol{X})\\). Intuitively, the score function measures how sensitive is the log-likelihood to the choice of parameters.
 
-> **Fisher information**: the variance of the score function. To be specific, let's assume again that the score function of the observation \\(\boldsymbol{X}\\) is \\(S(\theta;\boldsymbol{X})\\), then the fisher information is defined as $$E_{\boldsymbol{X}}\bigg(S(\theta;\boldsymbol{X})^2\bigg)$$. If the log-likelihood is twice differentiable with respect to \\(\theta\\), then the Fisher information is equivalent to $$-E_{\boldsymbol{X}}\bigg(\frac{\partial}{\partial\theta}S(\theta;\boldsymbol{X})\bigg)$$ or $$-E_{\boldsymbol{X}}\bigg(\frac{\partial^{2}}{\partial\theta^{2}}\log L(\theta; \boldsymbol{X})\bigg)$$.
+> **Fisher information**: the variance of the score function. To be specific, let's assume again that the score function of the observation \\(\boldsymbol{X}\\) is \\(S(\theta;\boldsymbol{X})\\), then the fisher information is defined as $$E_{\boldsymbol{X}}\bigg(S(\theta;\boldsymbol{X})^2\bigg)$$. If the log-likelihood is twice differentiable with respect to \\(\theta\\), then the Fisher information is equivalent to $$-E_{\boldsymbol{X}}\bigg(\frac{\partial}{\partial\theta}S(\theta;\boldsymbol{X})\bigg)$$ or $$-E_{\boldsymbol{X}}\bigg(\frac{\partial^{2}}{\partial\theta^{2}}\log L(\theta; \boldsymbol{X})\bigg)$$. Hence the Fisher information is also the expected curvature of the log-likelihood function.
 
 -----
 
@@ -15,16 +15,7 @@ For a more detailed review, you can visit the [Wikipedia page](https://en.wikipe
 
 ### Why is the expectation of the score function zero?
 
-Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:
-
-* Complete Jekyll setup included (layouts, config, [404]({{ site.baseurl }}/404.html), [RSS feed]({{ site.baseurl }}/atom.xml), posts, and [example page]({{ site.baseurl }}/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
-
-Additional features are available in individual themes.
+You can mathematically prove that the expectation $$E_{\boldsymbol{X}}\bigg(S(\theta;\boldsymbol{X})\bigg)$$ equals 0 under some very mild conditions, the prrof can be found [here](https://en.wikipedia.org/wiki/Score_(statistics)#Mean).
 
 ### Browser support
 
