@@ -5,10 +5,6 @@ title: Interesting intuitions of the score and the Fisher information
 
 In this post I'm going to present two interesting intuitions about the **score function** and the **Fisher information**. Prior to that let's have a quick review of these two concepts:
 
-> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of \(\bm{X}\) is \(L(\theta;\bm{X})\), then the score function \(S(\theta;\bm{X})\) is defined as
-
-$$S(\theta;\bm{X})=\frac{\partial}{\partial\theta \log L(\theta;\bm{X})}$$
-
 -----
 
 Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
