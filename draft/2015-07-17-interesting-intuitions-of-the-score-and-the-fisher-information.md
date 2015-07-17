@@ -5,7 +5,7 @@ title: Interesting intuitions of the score and the Fisher information
 
 In this post I'm going to present two interesting intuitions about the **score function** and the **Fisher information**. Prior to that let's have a quick review of these two concepts:
 
-> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that 
+> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that \(\bm{X}\)
 
 -----
 
