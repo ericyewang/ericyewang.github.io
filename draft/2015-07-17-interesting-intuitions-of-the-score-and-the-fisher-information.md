@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two interesting intuitions of score and Fisher information
+title: Interesting intuitions of the score and the Fisher information
 ---
 
 In this post I'm going to present two interesting intuitions about the **score function** and the **Fisher information**. Prior to that let's have a quick review of these two concepts:
