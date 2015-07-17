@@ -11,9 +11,7 @@ In this post I'm going to present two interesting intuitions about the **score f
 
 -----
 
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
-
-There are currently two themes built on Poole:
+For a more detailed review, you can visit the [Wikipedia page](https://en.wikipedia.org/wiki/Fisher_information#Single-parameter_Bernoulli_experiment). In this post however, I will just give you two of my personal intuitions that might be interesting and help you understand these two fundamental concepts.
 
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
