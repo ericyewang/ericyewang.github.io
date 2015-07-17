@@ -11,14 +11,9 @@ In this post I'm going to present two interesting intuitions about the **score f
 
 -----
 
-For a more detailed review, you can visit the [Wikipedia page](https://en.wikipedia.org/wiki/Fisher_information#Single-parameter_Bernoulli_experiment). In this post however, I will just give you two of my personal intuitions that might be interesting and help you understand these two fundamental concepts.
+For a more detailed review, you can visit the [Wikipedia page](https://en.wikipedia.org/wiki/Fisher_information). In this post however, I will just give you two of my personal intuitions that might be interesting and help you understand these two fundamental concepts.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-### What's included
+### Why is the expectation of the score function zero?
 
 Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:
 
