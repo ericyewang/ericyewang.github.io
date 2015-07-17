@@ -15,14 +15,6 @@ For a more detailed review, you can visit the [Wikipedia page](https://en.wikipe
 
 ### Why is the expectation of the score function zero?
 
-You can mathematically prove that the expectation $$E_{\boldsymbol{X}}\bigg(S(\theta;\boldsymbol{X})\bigg)$$ equals 0 under some very mild conditions, the prrof can be found [here](https://en.wikipedia.org/wiki/Score_(statistics)#Mean).
+You can mathematically prove that the expectation $$E_{\boldsymbol{X}}\bigg(S(\theta;\boldsymbol{X})\bigg)$$ equals 0 under some very mild conditions, the proof can be found [here](https://en.wikipedia.org/wiki/Score_(statistics)#Mean). However, I am not satisfied since the proof provides little insight on why this is the case. 
 
-### Browser support
-
-Poole and its themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
-
-### Download
-
-Poole is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/poole">GitHub repository</a> for downloads, bug reports, and features requests.
-
-Thanks!
+To be continued......
