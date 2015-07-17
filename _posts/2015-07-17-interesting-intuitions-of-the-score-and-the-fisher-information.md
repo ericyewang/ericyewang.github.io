@@ -5,7 +5,9 @@ title: Interesting intuitions of the score and the Fisher information
 
 In this post I'm going to present two interesting intuitions about the **score function** and the **Fisher information**. Prior to that let's have a quick review of these two concepts:
 
-> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of \(\bm{X}\) is \(L(\theta;\bm{X})\), then the score function \(S(\theta;\bm{X})\) is defined as $$S(\theta;\bm{X})=\frac{\partial}{\partial\theta \log L(\theta;\bm{X})}$$
+> **Score function**: the gradient of the log-likelihood function. To be specific, let's assume that the likelihood of \(\bm{X}\) is \(L(\theta;\bm{X})\), then the score function \(S(\theta;\bm{X})\) is defined as
+
+$$S(\theta;\bm{X})=\frac{\partial}{\partial\theta \log L(\theta;\bm{X})}$$
 
 -----
 
