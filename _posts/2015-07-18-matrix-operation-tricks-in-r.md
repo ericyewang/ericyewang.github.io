@@ -7,7 +7,7 @@ I wanna share some **R** tricks on matrix operations.
 
 As we all know, carelessness in matrix manipulation might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, you are still lucky if your **R** program terminates itself and generates an error message, since you can still locate the bug and fix it. 
 
-When you are not lucky enough you will fall into some **R "trapps"** without even knowing it. These **"trapps"** is capable of remaining invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. I hope the tricks I am sharing with you can help avoid such **"trapps"**. But before that, let's first understand these **"trapps"** by the following simple example.
+When you are not lucky enough you will fall into some **R "trapps"** without even knowing it. These **"trapps"** is capable of remaining invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. I hope the tricks I am sharing with you can help avoid such **"trapps"**. But before that, let's first see some of these **"trapps"** in the following simple example.
 
 ### Can you find the trap?
 
