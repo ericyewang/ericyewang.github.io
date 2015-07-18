@@ -5,7 +5,7 @@ title: Matrix Dimension Tricks in R
 
 In this post I wanna share some **R** tricks on correctly specifying the dimension of a matrix. Probably most of the data analytics projects in **R** involve playing with a lot of matrices, and carelessness on specifying the dimensions of these matrices might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, generating an error isn't the worst case. At least you can locate the bug and with enough amount of time you should still be able to fix it. In the worst scenario, your algorithm will generate the wrong thing without any error or warning messages. Here is an example:
 
-{% highlight js %}
+{% highlight js linenos %}
 set.seed(1000)
 
 n <- 5; p <- 3
@@ -23,9 +23,9 @@ for (k in 1:3){
 }
 {% endhighlight %}
 
-In the above example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group. At a first glance, you might not be able to find and incorrectness in this piece of code (at least I didn't!). However, if you output  {% highlight text %}tXX[,,2]{% endhighlight %} you will immediately realize that there is something wrong. The output is as follows:
+In the above example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group. At a first glance, you might not be able to find and incorrectness in this piece of code (at least I didn't!). However, you will immediately realize that there is something wrong after seeing the following output:
 
-{% highlight js %}
+{% highlight js linenos %}
 > tXX[,,2]
 
           [,1]      [,2]      [,3]
