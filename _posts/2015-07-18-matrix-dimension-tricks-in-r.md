@@ -71,9 +71,11 @@ Now you may have noticed what are wrong. This example illustrates three "trapps"
 
 * In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b.
 
-### Tricks that can avoid the mentioned errors
+### Tricks that can avoid potential matrix operation errors
 
 #### 1. Use "drop = FALSE" when selecting subarrays
+
+**R** uses `drop = TRUE` as its default. The trick is, whenever the selected subarray participates in matrix operations, explicitly setting `drop = FALSE`. An example can be found below:
 
 {% highlight js linenos %}
 > X[1,]
@@ -81,4 +83,24 @@ Now you may have noticed what are wrong. This example illustrates three "trapps"
 > X[1,,drop=FALSE]
            [,1]       [,2]       [,3]
 [1,] -0.4457783 -0.3854893 -0.9824278
+{% endhighlight %}
+
+#### 2. Use "as.matrix" to create vectors
+
+Whenever a vector is going to participates in matrix operations, specify it as a column vector in **R** using `as.matrix()`. An example can be found below:
+
+{% highlight js linenos %}
+> 1:3
+
+[1] 1 2 3
+
+> as.matrix(1:3)
+
+     [,1]
+
+[1,]    1
+
+[2,]    2
+
+[3,]    3
 {% endhighlight %}
