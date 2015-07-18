@@ -3,11 +3,11 @@ layout: post
 title: Matrix Operation Tricks in R
 ---
 
-I wanna share some **R** tricks on matrix operations. Carelessness in matrix manipulation might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, you are still very lucky if your **R** program is terminated and generates a error message. At least you can locate the bug and with enough amount of time you should be able to fix it. I will share with you some **R "trapps"**. These **"trapps"** might remain invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. i hope the tricks I am sharing with you can help avoid such **"trapps"**. Let's start with an simlified example.
+I wanna share some **R** tricks on matrix operations. Carelessness in matrix manipulation might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, you are still very lucky if your **R** program is terminated and generates an error message, meaning that you can locate the bug and fix it. I will share with you some **R "trapps"**. These **"trapps"** might remain invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. I hope the tricks I am sharing with you can help avoid such **"trapps"**. But before that, let's first understand these **"trapps"** by the following simple example.
 
 ### Can you find the trap?
 
-In this example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group.
+In this example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups. The algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group.
 
 {% highlight js linenos %}
 set.seed(1000)
@@ -27,7 +27,7 @@ for (k in 1:3){
 }
 {% endhighlight %}
 
-At a first glance, you might not be able to find and incorrectness in this piece of code (at least I didn't!). However, you will immediately realize that there is something wrong after seeing the following output:
+At a first glance, you might not be able to find any incorrectness in this piece of code (at least I didn't!). However, you will immediately realize that there is something wrong after seeing the following output:
 
 {% highlight js linenos %}
 > tXX[,,2]
@@ -43,7 +43,7 @@ At a first glance, you might not be able to find and incorrectness in this piece
 
 ### Here is what is wrong
 
-Before answering what is wrong, let me give you several other outputs from the code:
+Here are several other outputs from the code:
 
 {% highlight js linenos %}
 > X[group==2,]
@@ -69,9 +69,13 @@ Now you may have noticed what are wrong. This example illustrates three "trapps"
 
 * `t(v)` will return a 1-by-p matrix where v is a p-dimensional vector in **R**;
 
-* In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b.
+* In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b;
 
-### Tricks that can avoid potential matrix operation errors
+* A is a 3-dimensional array and a is a scalar, `A[,,1] <- a` will not generate an error message in **R**, instead, each entry of `A[,,1]` will be changed to a.
+
+### Tricks that might be helpful
+
+The main idea of the following two tricks is to ensure that any matrices in matrix operatioins will not be coerced into **R** vectors.
 
 #### 1. Use "drop = FALSE" when selecting subarrays
 
@@ -104,3 +108,9 @@ Whenever a vector is going to participates in matrix operations, specify it as a
 
 [3,]    3
 {% endhighlight %}
+
+------
+
+So I haved described several **R "trapps"** that have given me a really hard time before and my own tricks to avoid them. hopefully this post will help.
+
+### Cheers!
