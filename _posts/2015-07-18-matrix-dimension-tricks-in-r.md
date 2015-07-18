@@ -23,9 +23,11 @@ for (k in 1:3){
 }
 {% endhighlight %}
 
-In the above example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group. At a first glance, you might not be able to find and incorrectness in this piece of code (at least I didn't!). However, if you output  `tXX[,,2]` you will immediatebly realize that there is something wrong. The output is as follows:
+In the above example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group. At a first glance, you might not be able to find and incorrectness in this piece of code (at least I didn't!). However, if you output  {% highlight text %}tXX[,,2]{% endhighlight %} you will immediately realize that there is something wrong. The output is as follows:
 
 {% highlight js %}
+> tXX[,,2]
+
           [,1]      [,2]      [,3]
 
 [1,] 0.5344658 0.5344658 0.5344658
