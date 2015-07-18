@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Matrix Dimension Tricks in R
+title: Matrix Operation Tricks in R
 ---
 
-In this post I wanna share some **R** tricks on correctly specifying the dimension of a matrix. Probably most of the data analytics projects in **R** involve playing with a lot of matrices, and carelessness on specifying the dimensions of these matrices might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, generating an error isn't the worst case. At least you can locate the bug and with enough amount of time you should still be able to fix it. In the worst scenario, your algorithm will generate the wrong thing without any error or warning messages. Let's start with the following example
+I wanna share some **R** tricks on matrix operations. Carelessness in matrix manipulation might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, you are still very lucky if your **R** program is terminated and generates a error message. At least you can locate the bug and with enough amount of time you should be able to fix it. I will share with you some **R "trapps"**. These **"trapps"** might remain invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. i hope the tricks I am sharing with you can help avoid such **"trapps"**. Let's start with an simlified example.
 
-### Can you tell what is wrong?
+### Can you find the trap?
 
 In this example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups and the algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group.
 
