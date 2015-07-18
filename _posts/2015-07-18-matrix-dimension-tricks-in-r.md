@@ -56,3 +56,5 @@ Very strange right? So what is wrong? Before answering that let me give you seve
 
 [1,] 0.5344658
 {% endhighlight %}
+
+Now you may have noticed that `X[group==2,]` returns a vector instead of a 1-by-3 matrix, and the matrix transpose function `t()` simply returns a 1-by-3 matrix instead of the desired 3-by-1 matrix. Then it seems that the matrix multiplication operator `%*%` will return the inner product (scaler) of two 1-dimensional object whenever their dimensions are non-conformable. In the end, as you have seen, the scaler was applied to all entries of the 3-by-3 matrix `tXX[,,2]`.
