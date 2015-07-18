@@ -36,3 +36,23 @@ In the above example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix fo
 
 [3,] 0.5344658 0.5344658 0.5344658
 {% endhighlight %}
+
+Very strange right? So what is wrong? Before answering that let me give you several other outputs from the code:
+
+{% highlight js linenos %}
+> X[group==k,]
+
+[1] 0.04112631 0.71975069 0.12138119
+
+> t(X[group==k,])
+
+           [,1]      [,2]      [,3]
+
+[1,] 0.04112631 0.7197507 0.1213812
+
+> t(X[group==k,])%*%X[group==k,]
+
+          [,1]
+
+[1,] 0.5344658
+{% endhighlight %}
