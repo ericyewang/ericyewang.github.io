@@ -65,7 +65,10 @@ Before answering what is wrong, let me give you several other outputs from the c
 
 Now you may have noticed what are wrong. This example illustrates three "trapps" in **R**:
 
-* By default, **R** will drop a dimension of a matrix/array when you select only one row/column/subarray from that dimension; * `t(v)` will return a 1-by-p matrix where v is a p-dimensional vector in **R**;
+* By default, **R** will drop a dimension of a matrix/array when you select only one row/column/subarray from that dimension;
+
+* `t(v)` will return a 1-by-p matrix where v is a p-dimensional vector in **R**;
+
 * In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b.
 
 And the matrix transpose function `t()` simply returns a 1-by-3 matrix instead of the desired 3-by-1 matrix. Then it seems that the matrix multiplication operator `%*%` will return the inner product (scaler) of two 1-dimensional object whenever their dimensions are non-conformable. In the end, as you have seen, the scaler was applied to all entries of the 3-by-3 matrix `tXX[,,2]`.
