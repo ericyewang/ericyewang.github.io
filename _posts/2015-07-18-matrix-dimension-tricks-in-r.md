@@ -71,4 +71,14 @@ Now you may have noticed what are wrong. This example illustrates three "trapps"
 
 * In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b.
 
-And the matrix transpose function `t()` simply returns a 1-by-3 matrix instead of the desired 3-by-1 matrix. Then it seems that the matrix multiplication operator `%*%` will return the inner product (scaler) of two 1-dimensional object whenever their dimensions are non-conformable. In the end, as you have seen, the scaler was applied to all entries of the 3-by-3 matrix `tXX[,,2]`.
+### Tricks that can avoid the mentioned errors
+
+#### 1. Use "drop = FALSE" when selecting subarrays
+
+{% highlight js linenos %}
+> X[1,]
+[1] -0.4457783 -0.3854893 -0.9824278
+> X[1,,drop=FALSE]
+           [,1]       [,2]       [,3]
+[1,] -0.4457783 -0.3854893 -0.9824278
+{% endhighlight %}
