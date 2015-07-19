@@ -3,15 +3,17 @@ layout: post
 title: Matrix Operation Tricks in R
 ---
 
-I wanna share some **R** tricks on matrix operations. 
+As we all know, careless matrix manipulation in **R** will very likely result in the "<font color="red">non-conformable arguments</font>" error. The good news is, your **R** program will terminate itself and generates an error message, helping you locate the bug and fix it.
 
-As we all know, carelessness in matrix manipulation might very likely result in the "<font color="red">non-conformable arguments</font>" error. However, you are still lucky if your **R** program terminates itself and generates an error message, since you can still locate the bug and fix it. 
+When you are not lucky enough you might fall into some what I call **R "trapps"**, without even knowing it! These **"trapps"** is neglected even by the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging.
 
-When you are not lucky enough you will fall into some **R "trapps"** without even knowing it. These **"trapps"** is capable of remaining invisible even to the experienced **R** users. Worse is, they will not generate any errors hence are extremely hard to be targeted during debugging. I have encountered such **"trapps"** several times and it took me forever long to figure out what is wrong. I hope the tricks I am sharing with you can help avoid such **"trapps"**. But before that, let's first see some of these **"trapps"** in the following simple example.
+I have met with such **"trapps"** several times and it took me forever long to figure out what is wrong. To battle them I have developed some tricks by myself and I am sharing them with you. I hope they can help you avoid such **"trapps"**. But before that, let's first see some of these **"trapps"** in the following simple example.
+
+------
 
 ### Can you find the trap?
 
-In this example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups. The algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}$$ for each group.
+In this example, $$\boldsymbol{X}\in\Re^{n\times p}$$ is a design matrix for 5 units with 3 covariates. These 5 units fall into 3 groups. The algorithm tends to calculate $$\boldsymbol{X}^{T}\boldsymbol{X}\in\Re^{p\times p}$$ for each group.
 
 {% highlight js linenos %}
 set.seed(1000)
@@ -31,7 +33,7 @@ for (k in 1:3){
 }
 {% endhighlight %}
 
-At a first glance, you might not be able to find any incorrectness in this piece of code (at least I didn't!). However, you will immediately realize that there is something wrong after seeing the following output:
+At a first glance, you might not be able to find any incorrectness in this piece of code (at least I didn't!). **R** is also super happy with it and no error will be generated! You might just happily report the outputs and start watching Youtube. However, if you are careful enough you will realize that there is something wrong after examining the output:
 
 {% highlight js linenos %}
 > tXX[,,2]
@@ -47,7 +49,7 @@ At a first glance, you might not be able to find any incorrectness in this piece
 
 ### Here is what is wrong
 
-Here are several other outputs from the code:
+Let's first look at some more details:
 
 {% highlight js linenos %}
 > X[group==2,]
@@ -67,15 +69,15 @@ Here are several other outputs from the code:
 [1,] 0.5344658
 {% endhighlight %}
 
-Now you may have noticed what are wrong. This example illustrates four "trapps" in **R**:
+Now you may have noticed what is going wrong. This example illustrates four "trapps" in **R**:
 
 * By default, **R** will drop a dimension of a matrix/array when you select only one row/column/subarray from that dimension;
 
 * `t(v)` will return a 1-by-p matrix where v is a p-dimensional vector in **R**;
 
-* In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimension of this matrix multiplication is non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b;
+* In `a%*%b`, if a or b is a p-dimensional vector, it will be automatically treated as a p-by-1 matrix. If the dimensions of a and b are non-conformable (e.g., 1-by-p multiplied by 1-by-p), the **R** operator will return the inner product (a scalar) of a and b;
 
-* A is a 3-dimensional array and a is a scalar, `A[,,1] <- a` will not generate an error message in **R**, instead, each entry of `A[,,1]` will be changed to a.
+* A is a 3-dimensional array and a is a scalar, running `A[,,1] <- a` will not get an error message in **R**. Instead, each entry of `A[,,1]` will be given value a.
 
 ### Tricks that might be helpful
 
@@ -83,7 +85,7 @@ The main idea of the following two tricks is to ensure that any matrices in matr
 
 #### 1. Use "drop = FALSE" when selecting vectors
 
-**R** uses `drop = TRUE` as its default. The trick is, whenever the selected vectors participates in matrix operations, explicitly setting `drop = FALSE`. An example can be found below:
+**R** uses `drop = TRUE` as its default. This trick is explicitly setting `drop = FALSE`, whenever the selected vectors participates in matrix operations. An example can be found below:
 
 {% highlight js linenos %}
 > X[1,]
@@ -95,7 +97,7 @@ The main idea of the following two tricks is to ensure that any matrices in matr
 
 #### 2. Use "as.matrix" to create vectors
 
-Whenever a vector is going to participates in matrix operations, specify it as a column vector in **R** using `as.matrix()`. An example can be found below:
+Whenever a vector is going to participate in matrix operations, specify it as a column vector in **R** using `as.matrix()`. An example can be found below:
 
 {% highlight js linenos %}
 > 1:3
@@ -115,6 +117,6 @@ Whenever a vector is going to participates in matrix operations, specify it as a
 
 ------
 
-So I haved described several **R "trapps"** that have given me a really hard time before and my own tricks to avoid them. hopefully this post will help.
+So I haved described several **R "trapps"** that have given me a really hard time. I have shared my own tricks to helped me avoid these **"trapps"**. Note that these **trapps** can only be avoided, but cannot be addressed. I hope that they can help you as well!
 
 ### Cheers!
