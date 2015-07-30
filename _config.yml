@@ -33,4 +33,5 @@ github:
 pages_list:       
   Blog: '/archive/'
   Publications: '/publications/'
+  Code: '/code/'
   Contact: '/contact/'
