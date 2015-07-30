@@ -19,5 +19,3 @@ title: Code
 <!-- A new one below -->
 
 </div>
-
-</div>
