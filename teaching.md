@@ -7,7 +7,7 @@ title: Teaching
 
 <!-- lrpd -->
 <div class="pub-main">
-<h3>STA 210: Regression Analysis</h3>
+<h3>STA 210: Regression Analysis (Lab Session)</h3>
 <p>[<a href="https://github.com/ericyewang/Duke-STA-210">Github Repository</a>]&nbsp;&nbsp;&nbsp; [<a href="http://ericyewang.github.io/Duke-STA-210/">Website</a>]&nbsp;&nbsp;&nbsp;</p>
 
 <div class="pub-sub">
