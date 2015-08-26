@@ -33,5 +33,6 @@ github:
 pages_list:       
   Blog: '/archive/'
   Publications: '/publications/'
+  Teaching: '/teaching/'
   Code: '/code/'
   Contact: '/contact/'
