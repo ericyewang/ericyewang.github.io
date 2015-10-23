@@ -8,7 +8,7 @@ title: Publications
 <!-- electroGP -->
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Probabilistic curve learning: Coulomb repulsion and the electrostatic Gaussian process. 
-<i>arxiv</i>.</p>
+<i>accepted to NIPS 2015</i>.</p>
 <p>[<a href="http://arxiv.org/pdf/1506.03768v1.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 
 <div class="pub-sub">
