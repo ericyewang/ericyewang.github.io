@@ -8,10 +8,10 @@
   padding-left:  25%;
   padding-right: 25%;
   background-image: url("asset/Background.JPG");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #self-container {
