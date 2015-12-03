@@ -8,8 +8,8 @@ title: Publications
 <!-- electroGP -->
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Probabilistic curve learning: Coulomb repulsion and the electrostatic Gaussian process. 
-<i>accepted to NIPS 2015</i>.</p>
-<p>[<a href="http://arxiv.org/pdf/1506.03768v1.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
+In <i>NIPS</i>, volume 28, pages 1729-1737, 2015.</p>
+<p>[<a href="https://papers.nips.cc/paper/5794-probabilistic-curve-learning-coulomb-repulsion-and-the-electrostatic-gaussian-process.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
@@ -19,13 +19,13 @@ title: Publications
 
 <!-- GEODE -->
 <div class="pub-main">
-<p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2014) Scalable multiscale density estimation. 
-<i>arxiv</i>.</p>
-<p>[<a href="http://arxiv.org/pdf/1410.7692v1.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
+<p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Scalable geometric density estimation. 
+Submitted to <i>AISTAT</i>.</p>
+<p>[<a href="http://arxiv.org/pdf/1410.7692v1.pdf">pdf (older version)</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
-<p>Although Bayesian density estimation using discrete mixtures has good performance in modest dimensions, there is a lack of statistical and computational scalability to high-dimensional multivariate cases. To combat the curse of dimensionality, it is necessary to assume the data are concentrated near a lower-dimensional subspace. However, Bayesian methods for learning this subspace along with the density of the data scale poorly computationally. To solve this problem, we propose an empirical Bayes approach, which estimates a multiscale dictionary using geometric multiresolution analysis in a first stage. We use this dictionary within a multiscale mixture model, which allows uncertainty in component allocation, mixture weights and scaling factors over a binary tree. A computational algorithm is proposed, which scales efficiently to massive dimensional problems. We provide some theoretical support for this geometric density estimation (GEODE) method, and illustrate the performance through simulated and real data examples.</p>
+<p>It is standard to assume a low-dimensional structure in estimating a high-dimensional density. However, popular methods, such as probabilistic principal component analysis, scale poorly computationally. We introduce a novel empirical Bayes method that we term geometric density estimation (GEODE) and show that, with mild assumptions, the subspace spanned by the principal axes of the data is the MAP linear subspace under the proposed model. With these axes pre-computed using fast singular value decomposition, GEODE easily scales to high dimensional problems while providing uncertainty characterization. The model is also capable of imputing missing data and learning the true intrinsic dimension. Finally, we generalize GEODE by mixing it across a dyadic clustering tree. Both simulation studies and real world data applications show superior performance of GEODE in terms of robustness and computational efficiency.</p>
 </div>
 </div>
 
