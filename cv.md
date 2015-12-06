@@ -16,9 +16,9 @@ CURRICULUM VITAE (PDF)</a></p>
 
 <h2> Education </h2>
 <ul>
-  <li>Ph.D. in Statistics, Duke University, Aug. 2014 - present</li>
-  <li>M.S. in Statistical and Economical Modeling, Duke University, Aug. 2008 - May 2012</li>
-  <li>B.S. in Computational Mathematics, Harbin Institute of Technology, Aug. 2008 - May 2012</li>
+  <li>Aug. 2014 - present: Ph.D. in Statistics, <a href="https://www.duke.edu">Duke University</a></li>
+  <li>Aug. 2008 - May 2012: M.S. in Statistical and Economical Modeling, <a href="https://www.duke.edu">Duke University</a></li>
+  <li>Aug. 2008 - May 2012: B.S. in Computational Mathematics, <a href="http://en.hit.edu.cn">Harbin Institute of Technology</a></li>
 </ul>
 
 </div>
