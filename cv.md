@@ -16,9 +16,9 @@ CURRICULUM VITAE (PDF)</a></p>
 
 <h2> Education </h2>
 <ul>
-  <li><font size="4">Aug. 2014 - present:</font>  <b>Ph.D. in Statistics</b>, <a href="https://www.duke.edu">Duke University</a></li>
-  <li><font size="4">Aug. 2008 - May 2012:</font> <b>M.S. in Statistical and Economical Modeling</b>, <a href="https://www.duke.edu">Duke University</a></li>
-  <li><font size="4">Aug. 2008 - May 2012:</font> <b>B.S. in Computational Mathematics</b>, <a href="http://en.hit.edu.cn">Harbin Institute of Technology</a></li>
+  <li><b>Ph.D. in Statistics</b>, <a href="https://www.duke.edu">Duke University</a>, <font size="4">Aug. 2014 - present</font></li>
+  <li><b>M.S. in Statistical and Economical Modeling</b>, <a href="https://www.duke.edu">Duke University</a>, <font size="4">Aug. 2008 - May 2012</font></li>
+  <li><b>B.S. in Computational Mathematics</b>, <a href="http://en.hit.edu.cn">Harbin Institute of Technology</a>, <font size="4">Aug. 2008 - May 2012</font></li>
 </ul>
 
 </div>
