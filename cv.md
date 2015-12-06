@@ -4,6 +4,7 @@ title: CV
 ---
 
 <div class="jumbotron1">
+<div class="container-home">
 <p><a href="http://ericyewang.github.io/resume.pdf">
 CURRICULUM VITAE (PDF)</a></p>
 
@@ -20,4 +21,5 @@ CURRICULUM VITAE (PDF)</a></p>
   <li>B.S. in Computational Mathematics, Harbin Institute of Technology, Aug. 2008 - May 2012</li>
 </ul>
 
+</div>
 </div>
