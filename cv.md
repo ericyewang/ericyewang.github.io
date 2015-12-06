@@ -4,7 +4,7 @@ title: CV
 ---
 
 <div class="jumbotron1">
-<div class="container-home">
+<div style="padding-left: 10%;">
 <p><a href="http://ericyewang.github.io/resume.pdf">
 CURRICULUM VITAE (PDF)</a></p>
 
