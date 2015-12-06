@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               Ye Wang (Eric)
-tagline:             Applied Statistician
+tagline:             Statistician & Machine Learning Practitioner
 url:                 http://ericyewang.github.io
 paginate:            1
 baseurl:             http://ericyewang.github.io
