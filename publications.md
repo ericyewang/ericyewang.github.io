@@ -9,7 +9,7 @@ title: Publications
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. Scalable geometric density estimation. 
 Accepted to <i>AISTAT 2016</i>.</p>
-<div  style="padding-top: -1.5%;padding-bottom: -1.5%">
+<div  style="margin-top: -1.5%;margin-bottom: -1.5%">
 <p><i><font color="#ff9900">Accepted for a full oral presentation (<6.5%).</font></i></p></div>
 <p>[pdf]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 
