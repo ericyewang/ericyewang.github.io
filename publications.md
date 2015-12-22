@@ -20,8 +20,9 @@ In <i>NIPS</i>, volume 28, pages 1729-1737, 2015.</p>
 <!-- GEODE -->
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Scalable geometric density estimation. 
-Submitted to <i>AISTAT</i>.</p>
-<p>[<a href="http://arxiv.org/pdf/1410.7692v1.pdf">pdf (older version)</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
+Accepted to <i>AISTAT</i>.</p>
+<p>Accepted for a full oral presentation (<6.5%).</p>
+<p>[pdf]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
