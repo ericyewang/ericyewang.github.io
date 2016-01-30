@@ -3,8 +3,7 @@ layout: default
 title: CV
 ---
 
-<div class="jumbotron1">
-<div style="padding-left: 10%;">
+<div class="pub-container">
 <p><a href="http://ericyewang.github.io/resume.pdf">
 CURRICULUM VITAE (PDF)</a></p>
 
@@ -21,5 +20,4 @@ CURRICULUM VITAE (PDF)</a></p>
   <li><b>B.S. in Computational Mathematics</b>, <a href="http://en.hit.edu.cn">Harbin Institute of Technology</a>, <font size="4">Aug. 2008 - May 2012</font></li>
 </ul>
 
-</div>
 </div>
