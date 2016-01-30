@@ -4,6 +4,7 @@ title: CV
 ---
 
 <div class="pub-container">
+
 <p><a href="http://ericyewang.github.io/resume.pdf">
 CURRICULUM VITAE (PDF)</a></p>
 
