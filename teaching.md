@@ -5,43 +5,19 @@ title: Teaching
 
 <div id="pub-container">
 
-<div class="pub-main">
-<h3>STA 210: Regression Analysis (2016 Spring)</h3>
-<div class="pub-sub">
-TA: Grade assignments and lead the lab session.
-</div>
-</div>
+<h2> PhD student, 2014 Fall - present </h2>
+<h3> Teaching Assistant</h3>
+<ul>
+  <li><font size="4">2016 Spring</font>, <b>STA 210: Regression Analysis</b></li>
+  <li><font size="4">2015 Fall</font>,   <b>STA 210: Regression Analysis</b>, <a href="https://github.com/ericyewang/Duke-STA-210">Github Repository</a>], [<a href="http://ericyewang.github.io/Duke-STA-210/">Website</a>]</li>
+  <li><font size="4">2014 Fall</font>,   <b>STA 130: Probabil/Statis In Egr</b></li>
+</ul>
 
-<!-- lrpd -->
-<div class="pub-main">
-<h3>STA 210: Regression Analysis (2015 Fall)</h3>
-<p>[<a href="https://github.com/ericyewang/Duke-STA-210">Github Repository</a>]&nbsp;&nbsp;&nbsp; [<a href="http://ericyewang.github.io/Duke-STA-210/">Website</a>]&nbsp;&nbsp;&nbsp;</p>
-
-<div class="pub-sub">
-TA: Lead the lab session.
-</div>
-</div>
-
-<!-- A new one below -->
-<div class="pub-main">
-<h3>STA 130: Probabil/Statis In Egr (2014 Fall)</h3>
-<div class="pub-sub">
-TA: Grade assignments and lead the lab session.
-</div>
-</div>
-
-<div class="pub-main">
-<h3>STA 601: Bayesian and Mordern Statistics (2014 Spring)</h3>
-<div class="pub-sub">
-TA: Grade assignments and lead the lab session.
-</div>
-</div>
-
-<div class="pub-main">
-<h3>STA 601: Bayesian and Mordern Statistics (2013 Spring)</h3>
-<div class="pub-sub">
-TA: Grade assignments.
-</div>
-</div>
+<h2> MSEM student, 2012 Fall - 2014 Spring </h2>
+<h3> Teaching Assistant</h3>
+<ul>
+  <li><font size="4">2014 Spring</font>, <b>STA 601: Bayesian and Mordern Statistics</b></li>
+  <li><font size="4">2013 Spring</font>,   <b>STA 601: Bayesian and Mordern Statistics</b></li>
+</ul>
 
 </div>
