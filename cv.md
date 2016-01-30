@@ -12,7 +12,7 @@ CURRICULUM VITAE (PDF)</a></p>
 
 <h4> Old Chem 114, Duke University, Durham, NC, US </h4>
 
-<h4> eric (dot) ye (dot) wang (at) duke (at) edu </h4>
+<h4> eric (dot) ye (dot) wang (at) duke (dot) edu </h4>
 
 <h2> Education </h2>
 <ul>
