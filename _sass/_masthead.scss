@@ -3,11 +3,8 @@
 // Super small header above the content for site name and short description.
 
 header {
-	position: fixed;
 	text-align: center;
-	top:0;
-	left:0;
-	right:0;
+	width: 100%;
 	height: 10%;
 	z-index: 9999;
 	background-color: #001A57;
@@ -31,8 +28,9 @@ header:hover {
 
 .masthead-title {
   margin: 0 auto;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  width: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   font-size: 1rem;
   a {
   	color: #fff;
