@@ -7,7 +7,7 @@ title: Contact
 <div class="container-home">
 <div  style="padding-top: 10%;">
 <h3>Either find me via</h3>
-<p>eric (dot) ye (dot) wang (at) duke (at) edu</p>
+<p>eric (dot) ye (dot) wang (at) duke (dot) edu</p>
 </div>
 </div>
 </div>
