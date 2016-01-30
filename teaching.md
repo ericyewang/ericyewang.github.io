@@ -23,5 +23,25 @@ TA: Lead the lab session.
 </div>
 
 <!-- A new one below -->
+<div class="pub-main">
+<h3>STA 130: Probabil/Statis In Egr (2014 Fall)</h3>
+<div class="pub-sub">
+TA: Grade assignments and lead the lab session.
+</div>
+</div>
+
+<div class="pub-main">
+<h3>STA 601: Bayesian and Mordern Statistics (2014 Spring)</h3>
+<div class="pub-sub">
+TA: Grade assignments and lead the lab session.
+</div>
+</div>
+
+<div class="pub-main">
+<h3>STA 601: Bayesian and Mordern Statistics (2013 Spring)</h3>
+<div class="pub-sub">
+TA: Grade assignments.
+</div>
+</div>
 
 </div>
