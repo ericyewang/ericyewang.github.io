@@ -7,7 +7,7 @@ title: Contact
 <div class="container-home">
 <div  style="padding-top: 10%;">
 <h3>Either find me via</h3>
-<p>yw104 (at) stat (dot) duke (dot) edu</p>
+<p>eric (dot) ye (dot) wang (at) duke (at) edu</p>
 </div>
 </div>
 </div>
@@ -21,7 +21,5 @@ title: Contact
     <a href="https://plus.google.com/101432152708144293021"><img id="goog" src="/asset/googleplus_128_128.png" alt="google plus"></a></div>
     <div class="soci-logo">
     <a href="https://github.com/ericyewang"><img id="git" src="/asset/github_128_128.png" alt="github"></a></div>
-    <div class="soci-logo">
-    <a href="http://weibo.com/morning1night"><img id="sina" src="/asset/sinablogweibo_128_128.png" alt="sinablogweibo"></a></div>
   </div>
   </div>
