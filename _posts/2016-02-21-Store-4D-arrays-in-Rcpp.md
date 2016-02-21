@@ -3,10 +3,6 @@ layout: post
 title: Store 4D arrays in Rcpp
 ---
 
-# Store 4D arrays in Rcpp
-Ye (Eric) Wang  
-February 21, 2016  
-
 In this blog I will present a method to pass a 4-dimensional array in R to Rcpp functions for efficiently matrix operations over the 2-dimensional slices of this array. The method can be generalized to higher dimensional arrays. I will assume the readers have some familiarity with Rcpp and Armadillo. For more details on Rcpp see <http://www.rcpp.org>. For more details on Armadillo see  <http://arma.sourceforge.net/docs.html#operators>.
 
 As we all know, matrix operatinos can be done efficiently by calling Armadillo inside Rcpp. Armadillo does provide an object called "cube" to deal with 3D arrays. However, its abillity of dealing with arrays with dimension higher than three is quite limited.
