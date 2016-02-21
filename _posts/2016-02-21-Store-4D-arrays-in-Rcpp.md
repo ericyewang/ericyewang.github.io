@@ -1,3 +1,8 @@
+---
+layout: post
+title: Store 4D arrays in Rcpp
+---
+
 # Store 4D arrays in Rcpp
 Ye (Eric) Wang  
 February 21, 2016  
