@@ -7,7 +7,7 @@ In this blog I will present a method to pass a 4-dimensional array in R to Rcpp 
 
 As we all know, matrix operatinos can be done efficiently by calling Armadillo inside Rcpp. Armadillo does provide an object called "cube" to deal with 3D arrays. However, its abillity of dealing with arrays with dimension higher than three is quite limited.
 
-4D arrays are pretty common in many statistical applications, for instance, in a hierarchical clustering modeling application with two group indices, covariance matrices (d by d) of each subpopulation i (i = 1,...,n) for each cluster j (j = 1,...,m) can be stored into a 4D array (d by d by n by m). In this example, one would also like to apply matrix operations efficiently on the d by d matrix slices (the covariance matrices) of the array. The story can be easily generalized to higher dimensional arrays. This motivates me to find an general and efficient way to achieve this goal in Rcpp, and below is my best attempt using the vector library of c++:
+4D arrays are pretty common in many statistical applications, for instance, in a hierarchical clustering modeling application, covariance matrices (d * d) of each subpopulation i (i = 1,...,n) for each cluster j (j = 1,...,m) can be stored into a 4D array (d * d * n * m). In this example, one would also like to apply matrix operations efficiently on the d by d matrix slices (the covariance matrices) of the array. The story can be easily generalized to higher dimensional arrays. This motivates me to find an general and efficient way to achieve this goal in Rcpp, and below is my best attempt using the vector library of c++:
 
 
 ```r
