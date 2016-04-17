@@ -11,7 +11,7 @@ title: Publications
 Accepted to <i>AISTAT 2016</i>.</p>
 <div  style="margin-top: -1.5%;margin-bottom: -1.5%">
 <p><i><font color="#ff9900">Accepted for a full oral presentation (<6.5%).</font></i></p></div>
-<p>[pdf]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
+<p>[pdf]&nbsp;&nbsp;&nbsp; [<a href="https://github.com/ericyewang/GEODE">Code</a>]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
@@ -23,7 +23,7 @@ Accepted to <i>AISTAT 2016</i>.</p>
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Probabilistic curve learning: Coulomb repulsion and the electrostatic Gaussian process. 
 In <i>NIPS</i>, volume 28, pages 1729-1737, 2015.</p>
-<p>[<a href="https://papers.nips.cc/paper/5794-probabilistic-curve-learning-coulomb-repulsion-and-the-electrostatic-gaussian-process.pdf">pdf</a>]&nbsp;&nbsp;&nbsp; [Online Document]&nbsp;&nbsp;&nbsp; [Code]</p>
+<p>[<a href="https://papers.nips.cc/paper/5794-probabilistic-curve-learning-coulomb-repulsion-and-the-electrostatic-gaussian-process.pdf">pdf</a>]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
