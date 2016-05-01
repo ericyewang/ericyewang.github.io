@@ -23,7 +23,7 @@ Accepted to <i>AISTAT 2016</i>.</p>
 <div class="pub-main">
 <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. (2015) Probabilistic curve learning: Coulomb repulsion and the electrostatic Gaussian process. 
 In <i>NIPS</i>, volume 28, pages 1729-1737, 2015.</p>
-<p>[<a href="https://papers.nips.cc/paper/5794-probabilistic-curve-learning-coulomb-repulsion-and-the-electrostatic-gaussian-process.pdf">pdf</a>]</p>
+<p>[<a href="https://papers.nips.cc/paper/5794-probabilistic-curve-learning-coulomb-repulsion-and-the-electrostatic-gaussian-process.pdf">pdf</a>][<a href="https://scholar.google.com/scholar.bib?q=info:NetUEsBlGa0J:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAVyZipgDCqKnNzh1R8b2zz67_k5AHDRQp&scisf=4&hl=en">BibTex</a>]</p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
