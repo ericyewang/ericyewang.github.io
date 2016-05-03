@@ -11,7 +11,7 @@ title: Publications
 In <i>AISTAT</i>, volume 51, pages 857-865, 2016</p>
 <div  style="margin-top: -1.5%;margin-bottom: -1.5%">
 <p><i><font color="#ff9900">Accepted for a full oral presentation (<6.5%).</font></i></p></div>
-<p><a href="http://jmlr.org/proceedings/papers/v51/wang16e.pdf">[pdf]</a>&nbsp;&nbsp;&nbsp; [<a href="https://github.com/ericyewang/GEODE">Code</a>]&nbsp;&nbsp;&nbsp; <a href="http://jmlr.org/proceedings/papers/v51/wang16e-supp.pdf">[supplementary]</a></p>
+<p><a href="http://jmlr.org/proceedings/papers/v51/wang16e.pdf">[pdf]</a>&nbsp;&nbsp;&nbsp; [<a href="https://github.com/ericyewang/GEODE">code</a>]&nbsp;&nbsp;&nbsp; <a href="http://jmlr.org/proceedings/papers/v51/wang16e-supp.pdf">[supplementary]</a></p>
 
 <div class="pub-sub">
 <p><b>Abstract</b></p>
