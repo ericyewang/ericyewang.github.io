@@ -10,6 +10,7 @@ title: Publications
   <li>
   <p><a href="http://ericyewang.github.io">Ye Wang</a>, <a href="http://sites.carloalberto.org/canale/">Antonio Canale</a>, <a href="https://stat.duke.edu/~dunson/">David Dunson</a>. "Scalable geometric density estimation."</p> 
   <p><i>Proceedings of the 19th International Conference on Artificial Intelligence and Statistics.</i> 2016.</p> 
+  <p>Notable Student Paper Award (<1%)</p> 
   <p><a href="http://jmlr.org/proceedings/papers/v51/wang16e.pdf">[pdf]</a> [<a href="https://github.com/ericyewang/GEODE">code</a>] <a href="http://jmlr.org/proceedings/papers/v51/wang16e-supp.pdf">[supplementary]</a> [<a href="https://scholar.google.es/scholar.bib?q=info:Pz3kBmpZSEAJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAVzF2Vr9rzuzP9zm15geGL-bcxfB5E0II&scisf=4&hl=en">BibTex</a>]</p>
   </li>
   
