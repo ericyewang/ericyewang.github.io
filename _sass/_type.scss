@@ -42,6 +42,10 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  border-width: 1rem;
+   border-bottom-width:1rem;
+   border-bottom-color:grey;
+   border-bottom-style: solid;
 }
 
 li{
