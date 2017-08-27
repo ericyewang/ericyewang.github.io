@@ -1,31 +1,73 @@
-/* container declaration */
-.container {
-    max-width: 100rem;
-    padding-left:  1.5rem;
-    padding-right: 1.5rem;
-    margin-left:  5%;
-    margin-top:  5%;
-    margin-right: 5%;
+/* basic */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7f7;
 }
 
-h1.container {
-    font-size: 20 rem;
+h1 {
+    font-size: 5rem;
     color: #3b5998;
-    // Facebook deep blue
 }
 
-h2.container {
-    font-size: 15 rem;
+h2 {
+    font-size: 3rem;
 }
 
-h3.container {
-    font-size: 10 rem;
+h3 {
+    font-size: 2rem;
 }
 
-p.container {
-    font-size: 8 rem;
+p {
+    font-size: 1rem;
 }
 
-li.container {
-    font-size: 8 rem;
+li a {
+    font-size: 1rem;
+}
+
+/* navigation */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3b5998;
+    top: 0;
+    width: 100%;
+}
+
+li.nav {
+    float: left;
+}
+
+li a.nav {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+li a.nav:hover:not(.active) {
+    background-color: #2f4779;
+}
+
+.active {
+    background-color: #2f4779;
+}
+
+/* main body*/
+.container {
+    max-width: 60rem;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+/* padding wrapper */
+.wrapper {
+    padding-left:  5rem;
+    padding-right:  5rem;
+    padding-bottom:  5rem;
 }
