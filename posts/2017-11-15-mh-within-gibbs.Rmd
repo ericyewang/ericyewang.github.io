@@ -1,0 +1,151 @@
+---
+title: "Implementing MH Within Gibbs"
+author: "Eric Wang"
+date: "11/15/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## How to Implement MH Within Gibbs?
+
+Without the loss of generality, we consider sampling from some bivariate distribution `p(x,y)`. Suppose that we can sample directly from `p(x|y)` but not from `p(y|x)`. Hence we are considering sampling `p(y|x)` via Metropolis Hasting (MH) algorithm. But how do we implement it? There seems to be two possible ways:
+
+at iteration `t`, with the previous samples as `x[t-1]` and `y[t-1]`:
+
+1. sample `x[t]` from `p(x|y[t-1])` and sample `y[t]` from some proposal `f(y|y[t-1])` based on the acceptance rate `p(y[t]|x[t])*f(y[t-1]|y[t]) / p(y[t-1]|x[t-1])*f(y[t]|y[t-1])`;
+
+2. sample `x[t]` from `p(x|y[t-1])` and sample `y[t]` from some proposal `f(y|y[t-1])` based on the acceptance rate `p(y[t]|x[t])*f(y[t-1]|y[t]) / p(y[t-1]|x[t])*f(y[t]|y[t-1])`;
+
+So what is the difference between the above two methods? The only difference is that in the first method, `p(y|x)` needs only be evaluated once per iteration, while in the second method, it needs to be evaluated twice. To understand this, note that in the first method, one can cache `p(y[t]|x[t])` in each iteration and re-use it in the denominator of the acceptance rate in the next iteration. Whereas in the second method, one needs to re-evaluate `p(y[t-1]|x[t])` since it is conditional on a new `x[t]`.
+
+Numerically the first method is more attracting, but is it correct? In order to answer this question I did the following simulation study.
+
+## Simulation Study
+
+Below is some useful helper function:
+```{r helper-function}
+auxMatrix <- function(Sigma) {
+  # calculate the conditional parameters given a covariance matrix
+  # the parameters are stored in a auxiliary matrix A
+  # A is s.t.
+  #   x[j] ~ N(A[j,-j]%*%x[-j], A[j,j])
+  
+  p = nrow(Sigma)
+  aux_mat = diag(diag(Sigma))
+  for (j in 1:p) {
+    aux_mat[j, -j] = Sigma[j, -j] %*% solve(Sigma[-j, -j])
+    aux_mat[j, j] = Sigma[j, j] - Sigma[j, -j] %*% solve(Sigma[-j, -j]) %*% Sigma[-j, j]
+  }
+  return (aux_mat)
+}
+
+gibbsSampler <- function(ns, cov_mat) {
+  aux_mat = auxMatrix(cov_mat)
+  xs = NULL
+  ys = NULL
+  x = y = 0
+  for (iter in 1:ns) {
+    # sample x from p(x|y)
+    x = aux_mat[1,2]*y + sqrt(aux_mat[1,1])*rnorm(1)
+    # sample y from p(y|x)
+    y = aux_mat[2,1]*x + sqrt(aux_mat[2,2])*rnorm(1)
+    
+    xs = c(xs, x)
+    ys = c(ys, y)
+  }
+  
+  return(rbind(xs, ys))
+}
+
+mhInGibbs1 <- function(ns, cov_mat) {
+  aux_mat = auxMatrix(cov_mat)
+  xs = NULL
+  ys = NULL
+  x = y = 0
+  prev_d = -Inf
+  for (iter in 1:ns) {
+    # sample x from p(x|y)
+    x = aux_mat[1,2]*y + sqrt(aux_mat[1,1]) * rnorm(1)
+    # sample y from p(y|x)
+    new_y = y + sqrt(cov_mat[2,2]) * rnorm(1)
+    cur_d = dnorm(new_y, aux_mat[2,1]*x, sqrt(aux_mat[2,2]), log = TRUE)
+    ar = cur_d - prev_d
+    if (runif(1) < exp(ar)) {
+      y = new_y
+      prev_d = cur_d
+    }
+    
+    xs = c(xs, x)
+    ys = c(ys, y)
+  }
+  
+  return(rbind(xs, ys))
+}
+
+mhInGibbs2 <- function(ns, cov_mat) {
+  aux_mat = auxMatrix(cov_mat)
+  xs = NULL
+  ys = NULL
+  x = y = 0
+  for (iter in 1:ns) {
+    # sample x from p(x|y)
+    x = aux_mat[1,2]*y + sqrt(aux_mat[1,1]) * rnorm(1)
+    # sample y from p(y|x)
+    new_y = y + sqrt(cov_mat[2,2]) * rnorm(1)
+    ar = dnorm(new_y, aux_mat[2,1]*x, sqrt(aux_mat[2,2]))
+    ar = ar / dnorm(y, aux_mat[2,1]*x, sqrt(aux_mat[2,2]))
+    if (runif(1) < ar) {
+      y = new_y
+    }
+    
+    xs = c(xs, x)
+    ys = c(ys, y)
+  }
+  
+  return(rbind(xs, ys))
+}
+```
+
+Below is the main experiment function:
+```{r main-function}
+mhInGibbsExperiment <- function(ns, cov_mat) {
+  suppressMessages(require(ggplot2))
+  suppressMessages(require(gridExtra))
+  suppressMessages(require(mvtnorm))
+  
+  res_true = t(rmvnorm(ns, c(0,0), cov_mat))
+  res_gibbs = gibbsSampler(ns, cov_mat)
+  res_mhgibbs1 = mhInGibbs1(ns, cov_mat)
+  res_mhgibbs2 = mhInGibbs2(ns, cov_mat)
+  
+  df = data.frame(x = c(res_true[1,], res_gibbs[1,], res_mhgibbs1[1,], res_mhgibbs2[1,]),
+                  y = c(res_true[2,], res_gibbs[2,], res_mhgibbs1[2,], res_mhgibbs2[2,]),
+                  iter = rep(1:ns, 4),
+                  method = factor(c(rep("direct", ns), rep("gibbs", ns), rep("mhgibbs1", ns), rep("mhgibbs2", ns))))
+  g1 <- ggplot(df)
+  g1 <- g1 + geom_point(aes(x = x, y = y))
+  g1 <- g1 + facet_wrap(~method, ncol = 2)
+  g2 <- ggplot(df)
+  g2 <- g2 + geom_line(aes(x = iter, y = y))
+  g2 <- g2 + facet_wrap(~method, ncol = 2)
+  grid.arrange(g1,g2,ncol = 1)
+}
+```
+
+Let's see which method is correct.
+```{r experiment}
+mhInGibbsExperiment(1000, matrix(c(900,29,29,1),2,2))
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
